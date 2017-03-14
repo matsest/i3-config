@@ -173,7 +173,8 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exit
 bindsym $mod+Shift+x exec i3lock --color "$base01"
 
 # resize window (you can also use the mouse for that)
@@ -258,6 +259,9 @@ exec_always feh --bg-scale ~/.i3/wallpaper.png
 
 # Set display mode
 exec_always xrandr --output VIRTUAL1 --off --output DP2 --off --output DP1 --off --output HDMI2 --primary --mode 1920x1200 --pos 1280x0 --rotate normal --output HDMI1 --off --output VGA1 --mode 1280x1024 --pos 0x0 --rotate normal
+
+# Logout menu
+bindsym Control+$mod+Delete exec ~/.i3/shutdown_menu
 
 
 # Fix Nautilius issue on Ubuntu
