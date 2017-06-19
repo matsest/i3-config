@@ -4,7 +4,6 @@ Based on https://github.com/bookercodes/setupi3
 
 ---
 
-g
 The setup steps are mostly following this youtube tutorial by Alex:
 https://www.youtube.com/watch?v=j1I63wGcvU4.
 
