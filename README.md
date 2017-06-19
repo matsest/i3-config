@@ -1,14 +1,17 @@
 # setupi3
 
-This is an experimental project to setup up a nice i3 desktop environment running on Ubuntu 15.04.
+Based on https://github.com/bookercodes/setupi3
 
+---
+
+g
 The setup steps are mostly following this youtube tutorial by Alex:
 https://www.youtube.com/watch?v=j1I63wGcvU4.
 
 ## Usage:
 
 ```
-git clone https://github.com/Xunius/setupi3.git && cd setupi3
+git clone ...
 sudo ./setupi3.sh
 ```
 
@@ -83,7 +86,7 @@ fi
 
 The line for setting custom wallpaper has been added (but commented out) in the config file.
 
-Before activating that line, need to install *feh*:
+Before activating that line, need to install *feh*: (or nitrogen)
 ```
 sudo apt-get install feh
 ```
@@ -179,9 +182,6 @@ cp /etc/i3blocks.conf ~/.i3/
 2. Use *i3blocks* in the **bar** section of the i3 config file.
 
 3. Edit the `~/.i3/i3blocks.conf` file.
-
-
-
 
 ### Fix the **volume** bar block problem
 
